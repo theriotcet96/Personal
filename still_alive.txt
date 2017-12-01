@@ -1,0 +1,14 @@
+Middle_G 1/8 Middle_F# 1/8 Middle_E 1/8 Middle_E 1/8
+Middle_F# 2 Rest 2
+Rest 1. Low_A 1/8 Middle_G 1/8 Middle_F# 1/8 Middle_E 1/8
+Middle_E 1 Middle_F# 1. Middle_D 1 Middle_E 1/8 Low_A 4 Low_A 1/8
+Middle_E 1 Middle_F# 1/8 Middle_G 1. Middle_E 1/8 Middle_C# 1
+Middle_D 1. Middle_E 1 Low_A 1/8 Low_A 1 Middle_F# 2. Rest 1/8
+Rest 2 Middle_G 1/8 Middle_F# 1/8 Middle_E 1/8 Middle_E 1/8
+Middle_F# 2 Rest 2
+Rest 1. Low_A 1/8 Middle_G 1/8 Middle_F# 1/8 Middle_E 1/8 Middle_E 1. Middle_F# 1/8 Middle_D 1. Middle_E 1/8
+Low_A 2. Rest 1. 
+Middle_E 1 Middle_F# 1/8 Middle_G 1. Middle_E 1/8
+Middle_C# 1. Middle_D 1/8 Middle_E 1 Low_A 1/8 Middle_D 1/8 Middle_E 1/8
+Middle_F 1/8 Middle_E 1/8 Middle_D 1/8 Middle_C 1/8 Rest 1
+

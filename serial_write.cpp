@@ -5,101 +5,195 @@
 #include <termios.h>
 #include <time.h>
 #include <iostream>
+#include <stdlib.h>
 
 #define STRLEN 22
 
 char NotesSharp[91][STRLEN] = {
   "Rest"
-  "Peddle C",
-  "Peddle C#",
-  "Peddle D",
-  "Peddle D#",
-  "Peddle E",
-  "Peddle F",
-  "Peddle F#",
-  "Peddle G",
-  "Peddle G#",
-  "Peddle A",
-  "Peddle A#",
-  "Peddle B",
-  "Deep C",
-  "Deep C#",
-  "Deep D",
-  "Deep D#",
-  "Deep E",
-  "Deep F",
-  "Deep F#",
-  "Deep G",
-  "Deep G#",
-  "Deep A",
-  "Deep A#",
-  "Deep B",
-  "Low C",
-  "Low C#",
-  "Low D",
-  "Low D#",
-  "Low E",
-  "Low F",
-  "Low F#",
-  "Low G",
-  "Low G#",
-  "Low A",
-  "Low A#",
-  "Low B",
-  "Middle C",
-  "Middle C#",
-  "Middle D",
-  "Middle D#",
-  "Middle E",
-  "Middle F",
-  "Middle F#",
-  "Middle G",
-  "Middle G#",
-  "Middle A",
-  "Middle A#",
-  "Middle B",
-  "Tenor C",
-  "Tenor C#",
-  "Tenor D",
-  "Tenor D#",
-  "Tenor E",
-  "Tenor F",
-  "Tenor F#",
-  "Tenor G",
-  "Tenor G#",
-  "Tenor A",
-  "Tenor A#",
-  "Tenor B",
-  "High C",
-  "High C#",
-  "High D",
-  "High D#",
-  "High E",
-  "High F",
-  "High F#",
-  "High G",
-  "High G#",
-  "High A",
-  "High A#",
-  "High B",
-  "Double High C",
-  "Double High C#",
-  "Double High D",
-  "Double High D#",
-  "Double High E",
-  "Double High F",
-  "Double High F#",
-  "Double High G",
-  "Double High G#",
-  "Double High A",
-  "Double High A#",
-  "Double High B",
-  "Octave C",
-  "Octave C#",
-  "Octave D",
-  "Octave D#",
-  "Octave E",
-  "Octave F"
+  "Peddle_C",
+  "Peddle_C#",
+  "Peddle_D",
+  "Peddle_D#",
+  "Peddle_E",
+  "Peddle_F",
+  "Peddle_F#",
+  "Peddle_G",
+  "Peddle_G#",
+  "Peddle_A",
+  "Peddle_A#",
+  "Peddle_B",
+  "Deep_C",
+  "Deep_C#",
+  "Deep_D",
+  "Deep_D#",
+  "Deep_E",
+  "Deep_F",
+  "Deep_F#",
+  "Deep_G",
+  "Deep_G#",
+  "Deep_A",
+  "Deep_A#",
+  "Deep_B",
+  "Low_C",
+  "Low_C#",
+  "Low_D",
+  "Low_D#",
+  "Low_E",
+  "Low_F",
+  "Low_F#",
+  "Low_G",
+  "Low_G#",
+  "Low_A",
+  "Low_A#",
+  "Low_B",
+  "Middle_C",
+  "Middle_C#",
+  "Middle_D",
+  "Middle_D#",
+  "Middle_E",
+  "Middle_F",
+  "Middle_F#",
+  "Middle_G",
+  "Middle_G#",
+  "Middle_A",
+  "Middle_A#",
+  "Middle_B",
+  "Tenor_C",
+  "Tenor_C#",
+  "Tenor_D",
+  "Tenor_D#",
+  "Tenor_E",
+  "Tenor_F",
+  "Tenor_F#",
+  "Tenor_G",
+  "Tenor_G#",
+  "Tenor_A",
+  "Tenor_A#",
+  "Tenor_B",
+  "High_C",
+  "High_C#",
+  "High_D",
+  "High_D#",
+  "High_E",
+  "High_F",
+  "High_F#",
+  "High_G",
+  "High_G#",
+  "High_A",
+  "High_A#",
+  "High_B",
+  "Double_High_C",
+  "Double_High_C#",
+  "Double_High_D",
+  "Double_High_D#",
+  "Double_High_E",
+  "Double_High_F",
+  "Double_High_F#",
+  "Double_High_G",
+  "Double_High_G#",
+  "Double_High_A",
+  "Double_High_A#",
+  "Double_High_B",
+  "Octave_C",
+  "Octave_C#",
+  "Octave_D",
+  "Octave_D#",
+  "Octave_E",
+  "Octave_F"
+};
+char NotesFlat[91][STRLEN] = {
+  "Rest"
+  "Peddle_C",
+  "Peddle_Db",
+  "Peddle_D",
+  "Peddle_Eb",
+  "Peddle_E",
+  "Peddle_F",
+  "Peddle_Gb",
+  "Peddle_G",
+  "Peddle_Ab",
+  "Peddle_A",
+  "Peddle_Bb",
+  "Peddle_B",
+  "Deep_C",
+  "Deep_Db",
+  "Deep_D",
+  "Deep_Eb",
+  "Deep_E",
+  "Deep_F",
+  "Deep_Gb",
+  "Deep_G",
+  "Deep_Ab",
+  "Deep_A",
+  "Deep_Bb",
+  "Deep_B",
+  "Low_C",
+  "Low_Db",
+  "Low_D",
+  "Low_Eb",
+  "Low_E",
+  "Low_F",
+  "Low_Gb",
+  "Low_G",
+  "Low_Ab",
+  "Low_A",
+  "Low_Bb",
+  "Low_B",
+  "Middle_C",
+  "Middle_Db",
+  "Middle_D",
+  "Middle_Eb",
+  "Middle_E",
+  "Middle_F",
+  "Middle_Gb",
+  "Middle_G",
+  "Middle_Ab",
+  "Middle_A",
+  "Middle_Bb",
+  "Middle_B",
+  "Tenor_C",
+  "Tenor_Db",
+  "Tenor_D",
+  "Tenor_Eb",
+  "Tenor_E",
+  "Tenor_F",
+  "Tenor_Gb",
+  "Tenor_G",
+  "Tenor_Ab",
+  "Tenor_A",
+  "Tenor_Bb",
+  "Tenor_B",
+  "High_C",
+  "High_Db",
+  "High_D",
+  "High_Eb",
+  "High_E",
+  "High_F",
+  "High_Gb",
+  "High_G",
+  "High_Ab",
+  "High_A",
+  "High_Bb",
+  "High_B",
+  "Double_High_C",
+  "Double_High_Db",
+  "Double_High_D",
+  "Double_High_Eb",
+  "Double_High_E",
+  "Double_High_F",
+  "Double_High_Gb",
+  "Double_High_G",
+  "Double_High_Ab",
+  "Double_High_A",
+  "Double_High_Bb",
+  "Double_High_B",
+  "Octave_C",
+  "Octave_Db",
+  "Octave_D",
+  "Octave_Eb",
+  "Octave_E",
+  "Octave_F"
 };
 char Beats[12][STRLEN] = {
   "1",
@@ -149,94 +243,58 @@ int configure_port(int port)
 
 int _serial;
 
+void send(char* c)
+{
+  write(_serial, c, 1);
+}
 int main(int argc, char** argv)
 {
 
   _serial = open_port();
   configure_port(_serial);
   char zero = 0;
-
-  char turkish_march_notes[][STRLEN] =
-  {
-   "Middle B", "Middle A", "Middle G#", "Middle A",
-   "Tenor C", "Rest", "Tenor D", "Tenor C", "Middle B", "Tenor C",
-   "Tenor E", "Rest", "Tenor F", "Tenor E", "Tenor D#", "Tenor E",
-   "Tenor B", "Tenor A", "Tenor G#", "Tenor A", "Tenor B", "Tenor A", "Tenor G#", "Tenor A",
-   "High C", "Tenor A", "High C",
-   "Tenor B", "Tenor A", "Tenor G", "Tenor A",
-   "Tenor B", "Tenor A", "Tenor G", "Tenor A",
-   "Tenor B", "Tenor A", "Tenor G", "Tenor F#",
-   "Tenor E"
-  };
-  bool turkish_march_staccato[]=
-  {
-	false, false, false, false,
-	true, false, false, false, false, false,
-	true, false, false, false, false, false,
-	false, false, false, false, false, false, false, false,
-	false, true, true,
-	true, true, true, true,
-	true, true, true, true,
-	true, true, true, true,
-	false
-  };
-  char turkish_march_beats[][STRLEN] =
-  {
-    "1/16", "1/16", "1/16", "1/16",
-    "1/8", "1/8", "1/16", "1/16", "1/16", "1/16",
-    "1/8", "1/8", "1/16", "1/16", "1/16", "1/16",
-    "1/16", "1/16", "1/16", "1/16", "1/16", "1/16", "1/16", "1/16",
-    "1", "1/8", "1/8",
-    "1/8", "1/8", "1/8", "1/8",
-    "1/8", "1/8", "1/8", "1/8",
-    "1/8", "1/8", "1/8", "1/8",
-    "1"
-  };
-
-
   int delays[12] = {500000, 250000, 167000, 125000, 1000000, 2000000, 750000, 375000, 250000, 187000, 1500000, 3000000};
 
-  for(int i = 0; i < 40; i++)
+  for(;;)
   {
-    char a=0, b=0, c=0, d=0;
-    for(int j = 0; j < 91; j++)
-    {
-      if(strcmp(_notes[i], NotesSharp[j]) == 0)
-      {
-        a=j/256;
-	b=j%256;
-        break;
-      }
-    }
-    for(int j = 0; j < 12; j++)
-    {
-      if(strcmp(_beats[i], Beats[j]) == 0)
-      {
-	c=j/256;
-	d=j%256;
-	break;
-      }
-    }
-    write(_serial, &a, 1);
-    write(_serial, &b, 1);
-    write(_serial, &c, 1);
-    write(_serial, &d, 1);
-    int spare = _staccato[i] ? 100000 : 0;
-    usleep(delays[c * 256 + d] - spare);
-    if(_staccato[i])
-    {
-      write(_serial, &zero, 1);
-      write(_serial, &zero, 1);
-      write(_serial, &zero, 1);
-      write(_serial, &zero, 1);
-      usleep(spare);
-    }
+	std::cout << "Enter the filename of the song" << std::endl;
+	char filename[20];
+	scanf("%s", filename);
+	if(strcmp(filename, "quit") == 0) {close(_serial);return 0;}
+	FILE* song = fopen(filename, "r");
+	while(!feof(song))
+	{
+		char a=0, b=0;
+		int d=-1;
+		char _note[STRLEN], _beat[STRLEN];
+		fscanf(song, "%s", _note);
+		fscanf(song, "%s", _beat);
+		for(int i = 0; i < 91; i++)
+		{
+			if(strcmp(_note, NotesSharp[i]) == 0 ||
+			   strcmp(_note, NotesFlat[i]) == 0)
+			{
+				a=i/256;
+				b=i%256;break;
+			}
+		}
+		for(int i = 0; i < 12; i++)
+		{
+			if(strcmp(_beat, Beats[i]) == 0)
+			{
+				d=i; break;
+			}
+		}
+		send(&a);
+		send(&b);
+		usleep(delays[d]);
+		send(&zero);
+		send(&zero);
+	}
+	fclose(song);
   }
 
-  write(_serial, &zero, 1);
-  write(_serial, &zero, 1);
-  write(_serial, &zero, 1);
-  write(_serial, &zero, 1);
+
   close(_serial);
   return 0;
 }
