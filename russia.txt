@@ -1,7 +1,0 @@
-Tenor_C 2. Rest 1/8 Middle_G 1/8 
-Tenor_C 1 Middle_G 1/8. Middle_A 1/16 Middle_B 1 Middle_E 1/8 Middle_E 1/8
-Middle_A 1 Middle_G 1/8. Middle_F 1/16 Middle_G 1 Middle_C 1/8 Middle_C 1/8
-Middle_D 1 Middle_D 1/8. Middle_E 1/16 Middle_F 1 Middle_F 1/8. Middle_G 1/16
-Middle_A 1 Middle_B 1/8 Tenor_C 1/8 Tenor_D 1. Middle_G 1/8
-Tenor_E 1 Tenor_D 1/8. Tenor_C 1/16 Tenor_D 1 Middle_B 1/8 Middle_G 1/8
-Tenor_C 1 Middle_B 1/8. Middle_A 1/16 Middle_B 1 Middle_E 1/8 Middle_E 1/8

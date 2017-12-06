@@ -1,7 +1,0 @@
-/home/christian/dev/mine/build/CMakeFiles/clean_test_results.dir
-/home/christian/dev/mine/build/CMakeFiles/download_extra_data.dir
-/home/christian/dev/mine/build/CMakeFiles/doxygen.dir
-/home/christian/dev/mine/build/gtest/CMakeFiles/gtest.dir
-/home/christian/dev/mine/build/gtest/CMakeFiles/gtest_main.dir
-/home/christian/dev/mine/build/CMakeFiles/run_tests.dir
-/home/christian/dev/mine/build/CMakeFiles/tests.dir

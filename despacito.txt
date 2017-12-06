@@ -1,6 +1,0 @@
-Middle_B 1 Rest 1/16 Middle_F# 1/16 Middle_B 1/16 Tenor_C# 1/32 Tenor_D 1/32 Tenor_E 1/32 Tenor_D 1/32 Tenor_C# 1/32 Middle_B 1/32 Middle_A 1/32 Middle_G 1/8. Tenor_D 1/8. Tenor_D 1 Rest 1. Tenor_D 1/8 Middle_A 1/8 Tenor_D 1/8 Middle_A 1/8 Tenor_D 1/8 Middle_A 1/8 Tenor_D 1/8 Tenor_E 1/16 Tenor_C# 1. Rest 2. 
-Middle_B 1 Rest 1/16 Middle_F# 1/16 Middle_B 1/16 Tenor_C# 1/16 Tenor_D 1/32 Tenor_E 1/32 Tenor_D 1/32 Tenor_C# 1/32 Middle_B 1/32 Middle_A 1/32
-Middle_G 1/8. Tenor_D 1/8. Tenor_E 1/8 Tenor_D 1/8 Rest 1. Tenor_D 1/8 Middle_A 1/8 Tenor_D 1/8 Middle_A 1/8 Tenor_D 1/8 Middle_A 1/8 Tenor_D 1/8 Tenor_E 1/16 Tenor_C# 1. Rest 2.
-Middle_B 1 Middle_B 1/16 Middle_B 1/16 Middle_B 1/16 Tenor_C# 1/16 Tenor_D 1/16 Tenor_C# 1/16 Tenor_D 1/8 Tenor_C# 1/32 Tenor_D 1/32 Tenor_C# 1/32 Middle_B 1/8 Rest 1/8 Middle_B 1/16 Middle_B 1/16 Middle_B 1/16 Tenor_C# 1/16 Tenor_D 1/16 Tenor_C# 1/16 Tenor_D 1/8 Tenor_C# 1/32 Tenor_D 1/32 Tenor_E 1/32
-Middle_A 1/8 Rest 1/8 Middle_A 1/16 Middle_A 1/16 Middle_A 1/16 Middle_A 1/16 Tenor_D 1/32 Middle_A 1/32 Tenor_D 1/32 Middle_A 1/16 Tenor_D 1/16 Tenor_E 1/16 Tenor_E 1/8 Tenor_C# 1 Rest 2.
-
